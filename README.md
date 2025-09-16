@@ -9,6 +9,27 @@ Esse mini projeto foi desenvolvido como forma de atividade avaliativa para a dis
 - Comparar modelos de classificação.
 - Identificar as features mais relevantes para determinar a qualidade do vinho.
 
+## Sobre o Dataset
+O dataset contém 1.599 amostras de vinho tinto com as seguintes features:
+- **Features físico-químicas**: 
+  - fixed acidity
+  - volatile acidity
+  - citric acid
+  - residual sugar
+  - chlorides
+  - free sulfur dioxide
+  - total sulfur dioxide
+  - density
+  - pH
+  - sulphates
+  - alcohol
+- **Target**: quality (score entre 0-10)
+
+## Tecnologias Utilizadas
+- **Python 3**
+- **Bibliotecas**: pandas, numpy, matplotlib, seaborn, scikit-learn
+- **Algoritmos**: Decision Tree, K-Nearest Neighbors, Logistic Regression
+
 <h3>Importação das Bibliotecas</h3>
 
 ```python
@@ -90,6 +111,8 @@ plt.ylabel('Verdadeiro')
 plt.xlabel('Predito')
 plt.show()
 ```
+<img width="649" height="547" alt="image" src="https://github.com/user-attachments/assets/64a98008-4f1f-49d3-9723-b6a90900e0fb" />
+
 
 <h3>Modelo KNN</h3>
 
@@ -112,6 +135,8 @@ plt.ylabel('Verdadeiro')
 plt.xlabel('Predito')
 plt.show()
 ```
+<img width="649" height="547" alt="image" src="https://github.com/user-attachments/assets/0705c134-33c4-4285-899d-339a89e6be24" />
+
 
 <h3>Modelo LogisticRegression</h3>
 
@@ -134,6 +159,8 @@ plt.ylabel('Verdadeiro')
 plt.xlabel('Predito')
 plt.show()
 ```
+<img width="649" height="547" alt="image" src="https://github.com/user-attachments/assets/fae92a6b-780e-4f6f-a21c-ddeb1c994947" />
+
 
 <h3>Tarefas</h3>
 
@@ -146,3 +173,4 @@ plt.ylabel('Acurácia')
 plt.title('Comparação de Acurácia dos Modelos')
 plt.show()
 ```
+
